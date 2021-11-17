@@ -52,6 +52,7 @@ func Provider() *schema.Provider {
 			"fusionauth_entity_type":              resourceEntityType(),
 			"fusionauth_entity_type_permission":   resourceEntityTypePermission(),
 			"fusionauth_entity_grant":             resourceEntityGrant(),
+			"fusionauth_ip_access_control_list":   resourceIPAccessControlList(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"fusionauth_lambda":           dataSourceLambda(),
